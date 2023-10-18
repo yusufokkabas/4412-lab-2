@@ -40,3 +40,35 @@ imshow(i64); title('64');
 subplot(2,3,6)
 imshow(i32); title('32');
 
+clear;
+clc;
+close all;
+
+
+skull = imread('Ctskull-256.tif');
+skull128 = skull/2;
+skull64 = skull/4;
+skull32 = skull/8;
+skull16 = skull/16;
+skull8 = skull/32;
+skull4 = skull/64;
+skull2 = skull/128;
+
+subplot(2,4,1);
+imshow(skull); title('Original');
+subplot(2,4,2)
+imshow(skull128); title('128');
+subplot(2,4,3)
+imshow(skull64); title('64');
+subplot(2,4,4)
+imshow(skull32); title('32');
+subplot(2,4,5)
+imshow(skull16); title('16');
+subplot(2,4,6)
+imshow(skull8); title('8');
+subplot(2,4,7)
+imshow(skull4); title('4');
+subplot(2,4,8)
+imshow(skull2); title('2');
+
+
